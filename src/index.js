@@ -1,4 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-ReactDOM.render()
+import BomDia from './componentes/BomDia'
+
+ReactDOM.render(<BomDia />, document.getElementById('root'))
+
