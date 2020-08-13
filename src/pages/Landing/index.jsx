@@ -1,13 +1,20 @@
 import React from 'react' ;
 
+//* SPA = simple page application
+import { Link } from 'react-router-dom'
+
+//* Importando os icones
 import logoImg from '../../assets/images/logo.svg' 
 import landingImg from '../../assets/images/landing.svg'
 import studyIcon from '../../assets/images/icons/study.svg'
 import giveClassesIcon from '../../assets/images/icons/give-classes.svg'
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg'
 
+//* importando o css da pasta
 import './styles.css';
 
+
+//* Componente Landing
 function Landing(){
     return (
       <div id="page-landing">
@@ -24,15 +31,17 @@ function Landing(){
           
           <div className="buttons-container">
              
-              <a href="" className="study" >
+             
+              
+              <Link to="/study" href="" className="study" >
                   <img src={studyIcon} alt="Estudar" />
                   Estudar
-               </a>
+               </Link>
 
-              <a href="" className="give-classes">
+              <Link to="/give-classes" href="" className="give-classes">
                   <img src={giveClassesIcon} alt="Estudar" />
                   Dar aula
-              </a>
+              </Link>
 
           </div>
            <span className="total-connections">
